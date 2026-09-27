@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "OK: walking into the spikes kills",
+    "OK: falling into the gap kills",
+    "OK: second spike death",
+    "OK: R mid-death respawns alive; 3 deaths counted"
+  ],
+  "engine": "4.7.2-stable (official)",
+  "failed": "",
+  "fps": 30,
+  "frames": 342,
+  "segment": "run-03",
+  "size": [
+    3840,
+    2160
+  ]
+}

@@ -1,0 +1,19 @@
+{"deaths":0,"detail":"run-01","event":"segment_start","frame":0,"physics_tick":0,"state":0,"t_s":0.0,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"mouse click on START button at logical (320.0, 232.0)","event":"mouse_click","frame":46,"physics_tick":0,"state":1,"t_s":1.533,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"D (move right)","event":"press","frame":68,"physics_tick":44,"state":1,"t_s":2.267,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"press","frame":84,"physics_tick":76,"state":1,"t_s":2.8,"x":140.62,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"release","frame":85,"physics_tick":78,"state":1,"t_s":2.833,"x":145.96,"y":309.52}
+{"deaths":0,"detail":"D (move right)","event":"release","frame":105,"physics_tick":118,"state":1,"t_s":3.5,"x":252.62,"y":319.93}
+{"deaths":0,"detail":"A (move left)","event":"press","frame":148,"physics_tick":204,"state":1,"t_s":4.933,"x":257.96,"y":319.93}
+{"deaths":0,"detail":"A (move left)","event":"release","frame":162,"physics_tick":232,"state":1,"t_s":5.4,"x":217.0,"y":320.0}
+{"deaths":0,"detail":"Space (jump in place, facing left)","event":"press","frame":197,"physics_tick":302,"state":1,"t_s":6.567,"x":217.0,"y":320.0}
+{"deaths":0,"detail":"Space (jump in place, facing left)","event":"release","frame":198,"physics_tick":304,"state":1,"t_s":6.6,"x":217.07,"y":309.6}
+{"deaths":0,"detail":"F3 (show collider)","event":"press","frame":243,"physics_tick":394,"state":1,"t_s":8.1,"x":217.07,"y":320.0}
+{"deaths":0,"detail":"F3 (show collider)","event":"release","frame":244,"physics_tick":396,"state":1,"t_s":8.133,"x":217.07,"y":320.0}
+{"deaths":0,"detail":"D (move right)","event":"press","frame":264,"physics_tick":436,"state":1,"t_s":8.8,"x":217.07,"y":320.0}
+{"deaths":0,"detail":"D (move right)","event":"release","frame":276,"physics_tick":460,"state":1,"t_s":9.2,"x":272.36,"y":319.93}
+{"deaths":0,"detail":"Space (jump in place, collider shown)","event":"press","frame":296,"physics_tick":500,"state":1,"t_s":9.867,"x":277.7,"y":319.93}
+{"deaths":0,"detail":"Space (jump in place, collider shown)","event":"release","frame":297,"physics_tick":502,"state":1,"t_s":9.9,"x":277.7,"y":309.52}
+{"deaths":0,"detail":"F3 (hide collider)","event":"press","frame":342,"physics_tick":592,"state":1,"t_s":11.4,"x":277.7,"y":319.92}
+{"deaths":0,"detail":"F3 (hide collider)","event":"release","frame":343,"physics_tick":594,"state":1,"t_s":11.433,"x":277.7,"y":319.92}
+{"deaths":0,"detail":"frames=368 failed=","event":"segment_end","frame":368,"physics_tick":644,"state":1,"t_s":12.267,"x":277.7,"y":319.92}

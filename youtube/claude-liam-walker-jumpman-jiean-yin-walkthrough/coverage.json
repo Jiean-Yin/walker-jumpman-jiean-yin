@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "game": {
+    "name": "walker-jumpman-jiean-yin",
+    "build_id": "74c10e5894dffe6e6a6ce27c7f3840d5cf932b2f92ac6d429fae74478b3dc987"
+  },
+  "captures": {
+    "run-01": {
+      "path": "capture/run-01.mp4",
+      "sha256": "46c049da9682d0aa1c5fad66f32d8bea0d7f4602c262b138701d663bcc672831",
+      "build_id": "74c10e5894dffe6e6a6ce27c7f3840d5cf932b2f92ac6d429fae74478b3dc987",
+      "method": "scripted-input",
+      "input_log": "capture/run-01-inputs.jsonl"
+    },
+    "run-02": {
+      "path": "capture/run-02.mp4",
+      "sha256": "bf130ab1ec735f66897f783f3d1f6a4d22f5e78ef25ff09553d78f32f3d9681e",
+      "build_id": "74c10e5894dffe6e6a6ce27c7f3840d5cf932b2f92ac6d429fae74478b3dc987",
+      "method": "scripted-input",
+      "input_log": "capture/run-02-inputs.jsonl"
+    },
+    "run-03": {
+      "path": "capture/run-03.mp4",
+      "sha256": "9b96fc5f809955021450efb9defc44abf19a26224db0453724abad8e79c251d2",
+      "build_id": "74c10e5894dffe6e6a6ce27c7f3840d5cf932b2f92ac6d429fae74478b3dc987",
+      "method": "scripted-input",
+      "input_log": "capture/run-03-inputs.jsonl"
+    },
+    "run-04": {
+      "path": "capture/run-04.mp4",
+      "sha256": "1870376828060992c4a9779bf87569fabc92761c3b0eed18bbeb609e9832da55",
+      "build_id": "74c10e5894dffe6e6a6ce27c7f3840d5cf932b2f92ac6d429fae74478b3dc987",
+      "method": "scripted-input",
+      "input_log": "capture/run-04-inputs.jsonl"
+    }
+  },
+  "features": [
+    {
+      "id": "start-mouse",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-01",
+          "beat_id": "B02",
+          "start_s": 0.0,
+          "action_s": 1.533,
+          "end_s": 2.2,
+          "observation": "A mouse click on the START button (frame 46) closes the menu card and starts play.",
+          "riff": "A mouse click starts the real game."
+        }
+      ]
+    },
+    {
+      "id": "start-keyboard",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-02",
+          "beat_id": "B03",
+          "start_s": 0.0,
+          "action_s": 0.833,
+          "end_s": 1.5,
+          "observation": "Enter at frame 25 starts the session from the menu.",
+          "riff": "(shown; not narrated separately)"
+        }
+      ]
+    },
+    {
+      "id": "move-left-right-and-facing",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-01",
+          "beat_id": "B02",
+          "start_s": 2.2,
+          "action_s": 4.933,
+          "end_s": 6.5,
+          "observation": "D runs right; A (frame 148) turns the character to face left: eye, brim and spear switch sides.",
+          "riff": "The spear-carrier runs, turns and jumps."
+        }
+      ]
+    },
+    {
+      "id": "single-fixed-jump",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-01",
+          "beat_id": "B02",
+          "start_s": 6.4,
+          "action_s": 6.567,
+          "end_s": 8.0,
+          "observation": "Space at frame 197 makes one fixed-height jump in place while facing left.",
+          "riff": "...runs, turns and jumps."
+        }
+      ]
+    },
+    {
+      "id": "spear-poses",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-01",
+          "beat_id": "B02",
+          "start_s": 2.2,
+          "action_s": 2.8,
+          "end_s": 4.9,
+          "observation": "Spear tilts forward while running and stands upright when idle and in the air.",
+          "riff": "(visible; poses summarised in B01/B02)"
+        }
+      ]
+    },
+    {
+      "id": "collider-overlay-f3",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-01",
+          "beat_id": "B02",
+          "start_s": 8.0,
+          "action_s": 8.1,
+          "end_s": 11.5,
+          "observation": "F3 (frame 243) draws the cyan 18x28 collision box around the character; the spear tip extends outside it; F3 again hides it.",
+          "riff": "F3 outlines the collision box: still eighteen by twenty-eight."
+        }
+      ]
+    },
+    {
+      "id": "starter-course",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-02",
+          "beat_id": "B03",
+          "start_s": 1.3,
+          "action_s": 1.9,
+          "end_s": 6.8,
+          "observation": "Five jumps cross the starter's steps, spike and gaps with 0 deaths; stops before the new gap at x~907.",
+          "riff": "This is the starter's own course, by Nik Bear Brown."
+        }
+      ]
+    },
+    {
+      "id": "pause-resume",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-02",
+          "beat_id": "B03",
+          "start_s": 7.5,
+          "action_s": 7.667,
+          "end_s": 9.6,
+          "observation": "Esc (frame 230) shows 'Take a breath.'; the character freezes; Enter (frame 281) resumes.",
+          "riff": "Escape pauses, Enter resumes."
+        }
+      ]
+    },
+    {
+      "id": "manual-retry-r",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-02",
+          "beat_id": "B03",
+          "start_s": 9.9,
+          "action_s": 10.067,
+          "end_s": 11.2,
+          "observation": "R (frame 302) returns the character to the spawn point; RETRIES stays 00.",
+          "riff": "R restarts at the spawn point, and the retry counter stays at zero."
+        }
+      ]
+    },
+    {
+      "id": "spike-death-and-auto-retry",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-03",
+          "beat_id": "B04",
+          "start_s": 1.7,
+          "action_s": 2.833,
+          "end_s": 4.1,
+          "observation": "Walking into the spikes: 'Watch the spikes', XX eyes, spear gone, hop and fall; automatic respawn about 0.55 s later; RETRIES 01.",
+          "riff": "Spikes: X eyes, a hop, back to the start."
+        }
+      ]
+    },
+    {
+      "id": "fall-death-visible-popup",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-03",
+          "beat_id": "B04",
+          "start_s": 5.5,
+          "action_s": 7.067,
+          "end_s": 8.3,
+          "observation": "Missing the first gap: 'Missed the landing'; the dead character pops up inside the gap from the bottom edge, then drops; respawn.",
+          "riff": "A gap death happens below the screen, so its hop is drawn from the bottom edge instead."
+        }
+      ]
+    },
+    {
+      "id": "retry-mid-death",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-03",
+          "beat_id": "B04",
+          "start_s": 9.9,
+          "action_s": 10.2,
+          "end_s": 11.3,
+          "observation": "R pressed 8 frames into a spike death (frame 306) respawns the character alive at once.",
+          "riff": "R in the middle of a death respawns at once."
+        }
+      ]
+    },
+    {
+      "id": "L2-near-edge-spike-trap",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B05",
+          "start_s": 7.5,
+          "action_s": 8.3,
+          "end_s": 10.1,
+          "observation": "Stopped on L1, a standstill jump (frame 249) comes down on L2's near-edge spikes at x~1149: 'Watch the spikes'.",
+          "riff": "A standstill jump from the first landing comes up short, onto the next landing's spikes."
+        }
+      ]
+    },
+    {
+      "id": "new-landings-L1-L4",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B06",
+          "start_s": 15.6,
+          "action_s": 15.7,
+          "end_s": 19.6,
+          "observation": "At full speed the character jumps onto L1, past L2's spikes, onto L3, then onto L4.",
+          "riff": "Land past those spikes, climb..."
+        }
+      ]
+    },
+    {
+      "id": "L3-far-edge-early-takeoff",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B06",
+          "start_s": 17.9,
+          "action_s": 18.467,
+          "end_s": 19.0,
+          "observation": "Takeoff at x~1377 (frame 554), before L3's far-edge spikes at x 1400, lands on L4.",
+          "riff": "...then take off before the far-edge spikes on the third landing - not at the edge."
+        }
+      ]
+    },
+    {
+      "id": "relocated-finish-and-results",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B06",
+          "start_s": 19.3,
+          "action_s": 19.6,
+          "end_s": 22.9,
+          "observation": "Touching the flag on L4 (frame 588) shows 'Course complete. 10.1 seconds / 1 retries'. Progress bar full.",
+          "riff": "The flag now sits at the top. Ten point one seconds, one retry."
+        }
+      ]
+    },
+    {
+      "id": "hud-progress-timer-retries",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B06",
+          "start_s": 15.0,
+          "action_s": 19.6,
+          "end_s": 22.9,
+          "observation": "Progress bar fills toward the relocated finish; timer and RETRIES counter update.",
+          "riff": "(visible; not narrated separately)"
+        }
+      ]
+    },
+    {
+      "id": "replay",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B06",
+          "start_s": 22.5,
+          "action_s": 22.933,
+          "end_s": 24.1,
+          "observation": "Enter on the results card (frame 688) starts a fresh session at the spawn point; RETRIES back to 00.",
+          "riff": "Enter plays again."
+        }
+      ]
+    },
+    {
+      "id": "main-menu-from-pause",
+      "status": "implemented",
+      "evidence": [
+        {
+          "capture": "run-04",
+          "beat_id": "B06",
+          "start_s": 24.0,
+          "action_s": 25.167,
+          "end_s": 26.8,
+          "observation": "Esc (frame 724) pauses; M (frame 755) returns to the main menu card.",
+          "riff": "M goes back to the menu."
+        }
+      ]
+    },
+    {
+      "id": "focus-loss-pause",
+      "status": "implemented",
+      "evidence": [],
+      "reason": "IMPLEMENTED BUT NOT FILMED. Explicit partial walkthrough agreed by Jiean Yin (2026-09-26): cannot be triggered through normal input in an unattended capture; verified by automated test focus-loss-pauses; the capture harness sets session.test_mode=true, which disables it."
+    },
+    {
+      "id": "cherries",
+      "status": "planned",
+      "evidence": [],
+      "reason": "GDD FEAT-05 only; not built."
+    },
+    {
+      "id": "three-zone-course",
+      "status": "planned",
+      "evidence": [],
+      "reason": "GDD FEAT-06 full course not built; this build has the starter slice plus the 03 / CLIMB extension."
+    },
+    {
+      "id": "settings-mute-remap",
+      "status": "planned",
+      "evidence": [],
+      "reason": "GDD FEAT-07 settings/remapping not built."
+    },
+    {
+      "id": "audio-effects",
+      "status": "planned",
+      "evidence": [],
+      "reason": "ASSET-PLAN SND-001; the game is silent."
+    },
+    {
+      "id": "moving-platform",
+      "status": "planned",
+      "evidence": [],
+      "reason": "GDD FEAT-09 deferred."
+    },
+    {
+      "id": "web-export",
+      "status": "planned",
+      "evidence": [],
+      "reason": "GDD FEAT-08 export not produced."
+    }
+  ]
+}

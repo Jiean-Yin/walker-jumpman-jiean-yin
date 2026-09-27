@@ -1,0 +1,20 @@
+{"deaths":0,"detail":"run-03","event":"segment_start","frame":0,"physics_tick":0,"state":0,"t_s":0.0,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (start)","event":"press","frame":20,"physics_tick":0,"state":1,"t_s":0.667,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (start)","event":"release","frame":21,"physics_tick":2,"state":1,"t_s":0.7,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"D (move right)","event":"press","frame":36,"physics_tick":32,"state":1,"t_s":1.2,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"press","frame":52,"physics_tick":64,"state":1,"t_s":1.733,"x":140.62,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"release","frame":53,"physics_tick":66,"state":1,"t_s":1.767,"x":145.96,"y":309.52}
+{"deaths":1,"detail":"D (move right)","event":"release","frame":85,"physics_tick":130,"state":3,"t_s":2.833,"x":316.62,"y":319.93}
+{"deaths":1,"detail":"D (move right)","event":"press","frame":122,"physics_tick":170,"state":1,"t_s":4.067,"x":64.0,"y":320.0}
+{"deaths":1,"detail":"Space (jump) at mark 138","event":"press","frame":138,"physics_tick":202,"state":1,"t_s":4.6,"x":140.62,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 138","event":"release","frame":139,"physics_tick":204,"state":1,"t_s":4.633,"x":145.96,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 292","event":"press","frame":167,"physics_tick":260,"state":1,"t_s":5.567,"x":295.29,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 292","event":"release","frame":168,"physics_tick":262,"state":1,"t_s":5.6,"x":300.62,"y":309.52}
+{"deaths":2,"detail":"D (move right)","event":"release","frame":212,"physics_tick":350,"state":3,"t_s":7.067,"x":505.06,"y":435.93}
+{"deaths":2,"detail":"D (move right)","event":"press","frame":249,"physics_tick":390,"state":1,"t_s":8.3,"x":64.0,"y":320.0}
+{"deaths":2,"detail":"Space (jump) at mark 138","event":"press","frame":265,"physics_tick":422,"state":1,"t_s":8.833,"x":140.62,"y":319.93}
+{"deaths":2,"detail":"Space (jump) at mark 138","event":"release","frame":266,"physics_tick":424,"state":1,"t_s":8.867,"x":145.96,"y":309.52}
+{"deaths":3,"detail":"D (move right)","event":"release","frame":298,"physics_tick":488,"state":3,"t_s":9.933,"x":316.62,"y":319.93}
+{"deaths":3,"detail":"R (retry mid-death)","event":"press","frame":306,"physics_tick":488,"state":1,"t_s":10.2,"x":64.0,"y":320.0}
+{"deaths":3,"detail":"R (retry mid-death)","event":"release","frame":307,"physics_tick":490,"state":1,"t_s":10.233,"x":64.0,"y":320.0}
+{"deaths":3,"detail":"frames=342 failed=","event":"segment_end","frame":342,"physics_tick":560,"state":1,"t_s":11.4,"x":64.0,"y":320.0}

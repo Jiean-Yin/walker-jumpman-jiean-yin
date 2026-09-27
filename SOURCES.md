@@ -29,7 +29,13 @@
 | Godot Engine | 4.7.2.stable.official.ed1daf0bf (Windows, regular build) | Game engine, headless tests, rendered captures |
 | Claude Code (Anthropic) | Claude desktop app, model Claude Opus 5.5, via Northeastern access | Code implementation, tests, captures, drafting documents (see below) |
 | Git / GitHub | — | Version control; one branch and pull request per step, merged with merge commits |
-| Brutalist | [nikbearbrown/brutalist.art](https://github.com/nikbearbrown/brutalist.art) commit `6a8380ae169cca81e0633664a65c958f5c12ab4b` | `godot-waikthrough` skill with the `walker` modifier for the explainer film *(film details added when produced)* |
+| Brutalist | [nikbearbrown/brutalist.art](https://github.com/nikbearbrown/brutalist.art) commit `6a8380ae169cca81e0633664a65c958f5c12ab4b`, used from a local copy at `C:\dev\brutalist.art` | `godot-waikthrough` skill in `walker` mode: beat-sheet pipeline, Remotion scenes (ClaudeComposerAsk, BrutalistHesitantWriter, ClaudeCodeBeat, FormACard, ClaudeVerdictArtifact, ClaudeTitleOutro), compositor, Gate T / Gate V checks, export receipt. **One local Windows patch** (`remotion_scenes.py`: resolve `npx.cmd` via `shutil.which`); not upstream. |
+| Kokoro (kokoro-onnx 0.6.1, model v1.0) | voice `am_onyx` ("Liam, in for Bear"), local, free | Film narration; no voice cloning, no paid TTS |
+| Remotion | 4.x (npm, via Brutalist's `runtime/remotion`) | Rendering the Claude-style bookend and card scenes at 4K |
+| FFmpeg | 9.0.2 full build (Gyan, via winget) | Capture encoding, frame-exact clip trims, labels, held-frame composite, final encode |
+| Python | 3.11.4 in a private virtual environment | Running Brutalist's scripts |
+
+The film's full source, script and evidence are in [youtube/claude-liam-walker-jumpman-jiean-yin-walkthrough/](youtube/claude-liam-walker-jumpman-jiean-yin-walkthrough/). The mascot, fonts (EB Garamond, Inter) and Claude-style scene designs are Brutalist's own bundled assets; no other media was imported into the film.
 
 ## Human and AI contributions
 
@@ -45,5 +51,17 @@
 - candidate landing geometry computed from the starter's physics (reviewed by Jiean);
 - finding the leg-in-floor defect (revision R2) from screenshots;
 - drafting the structure and wording of these documents from the session record. Personal observations and learning in `TEST-REPORT.md` and `FRICTIONAL.md` are Jiean's.
+
+**Film — Jiean Yin decided or checked:**
+- the episode title (chosen from Claude's suggestion) and the greeting language ("Hola");
+- agreeing to an explicit partial walkthrough (focus-loss pause not filmed);
+- the workaround location outside `Documents` (option A, `C:\dev`) and approval of every install;
+- watching the final export and approving it ("The file is fine").
+
+**Film — Claude Code contributed:**
+- **Script and beat sheet:** all narration, beat structure, scene props and on-screen text, including correcting two of its own overstatements before rendering (FACTCHECK.md).
+- **Visuals:** the capture driver and the four gameplay captures (scripted input, real engine), clip trims and labels, the before/after composite, and Remotion scene renders.
+- **Narration:** generated with the local Kokoro voice `am_onyx` ("Liam, in for Bear"). It is not a clone of any real person's voice.
+- QC: Gate T/V fixes, per-beat declarations with reasons, and spot checks for retiming and outro silence.
 
 **Rejected or changed from AI suggestions:** *TO FILL — e.g. anything you declined or modified.*
