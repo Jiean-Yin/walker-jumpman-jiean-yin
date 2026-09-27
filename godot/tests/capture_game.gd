@@ -18,7 +18,8 @@ func capture(label: String) -> void:
 	print("Captured rendered game viewport: " + label)
 
 func run() -> void:
-	output = ProjectSettings.globalize_path("res://../evidence/screens")
+	# One folder per run, so the starter's evidence/screens/ is never overwritten.
+	output = ProjectSettings.globalize_path("res://../evidence/screens-" + str(int(Time.get_unix_time_from_system())))
 	DirAccess.make_dir_recursive_absolute(output)
 	game = Game.new()
 	game.test_mode = true
