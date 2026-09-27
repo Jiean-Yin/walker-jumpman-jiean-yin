@@ -64,4 +64,6 @@ The film's full source, script and evidence are in [youtube/claude-liam-walker-j
 - **Narration:** generated with the local Kokoro voice `am_onyx` ("Liam, in for Bear"). It is not a clone of any real person's voice.
 - QC: Gate T/V fixes, per-beat declarations with reasons, and spot checks for retiming and outro silence.
 
-**Rejected or changed from AI suggestions:** *TO FILL — e.g. anything you declined or modified.*
+**Rejected or changed from AI suggestions:**
+I kept "FIRST STEPS" instead of AI's suggested header change, and renamed the project. Manually decided to drop double jump and dash after analysis with AI.
+Add Expected/Learned lines to FRICTIONAL.md.
