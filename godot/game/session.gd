@@ -45,7 +45,7 @@ func _ready() -> void:
 	queue_redraw()
 
 func _setup_input() -> void:
-	var actions := {"move_left": [KEY_A, KEY_LEFT], "move_right": [KEY_D, KEY_RIGHT], "jump": [KEY_SPACE], "pause": [KEY_ESCAPE, KEY_P], "restart": [KEY_R], "confirm": [KEY_ENTER], "menu": [KEY_M]}
+	var actions := {"move_left": [KEY_A, KEY_LEFT], "move_right": [KEY_D, KEY_RIGHT], "jump": [KEY_SPACE], "pause": [KEY_ESCAPE, KEY_P], "restart": [KEY_R], "confirm": [KEY_ENTER], "menu": [KEY_M], "debug_collider": [KEY_F3]}
 	for action in actions:
 		if InputMap.has_action(action):
 			continue
@@ -129,6 +129,8 @@ func resolve_contacts(fatal: bool, finished: bool) -> void:
 		retry_remaining = 0.55
 		player.enabled = false
 		player.velocity = Vector2.ZERO
+		# 335 = top of the HUD's bottom bar, the lowest visible playfield row.
+		player.die(player.position.y > float(level.fall_y), 335.0)
 	elif finished:
 		state = State.COMPLETE
 		last_finish_time = elapsed
@@ -169,6 +171,10 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed("menu") and state in [State.PAUSED, State.COMPLETE]:
 		state = State.MENU
 		player.enabled = false
+	elif event.is_action_pressed("debug_collider"):
+		# Presentation-only overlay of the real collision box; never changes state.
+		player.show_collider = not player.show_collider
+		player.queue_redraw()
 	elif event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if Rect2(220, 215, 200, 34).has_point(hud.get_local_mouse_position()):
 			if state in [State.MENU, State.COMPLETE]:
