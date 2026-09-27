@@ -62,3 +62,11 @@ Controls, movement/jump tuning, collision behavior, retry, pause, and completion
 ## Revisions
 
 <!-- Added after implementation. Original predictions above stay unchanged. -->
+
+*Added 2026-09-26 after implementation (game-source revision `eb851a6`). Details and evidence: [TEST-REPORT.md](TEST-REPORT.md).*
+
+- **Section 3 (unchanged behavior), how it was verified:** `tuning.gd` and the 18×28 collider are unchanged (checks `tuning-unchanged`, `collider-unchanged`); the 0.55 s retry is unchanged (starter `twenty-retries`, worst 34 ticks); controls, pause, restart, completion and replay pass the starter's 25 mechanics and 9 keyboard checks. One addition: the F3 key toggles a debug collider outline (display only, check `collider-overlay-toggle`).
+- **F3 (gap too short or too long) — partly answered.** Automated: the route stands on all four new landings and finishes with 0 deaths; walking without jumping fails from every surface; the L2 short hop and the L3 late jump both die on the spikes, so each landing needs a deliberate jump. Whether the difficulty is meaningful for a player: in about 10 minutes of quick play, holding D to go fast, I died 5 times at L2's near-edge spikes because my jump habit from the earlier gaps no longer worked there. So the gap was not meaningless for me, an experienced player. I have no evidence yet for new players.
+- **F4 (death animation vs fast retry) — did not occur, by design.** The death hop is drawn only; the body stays frozen, so it cannot cause a second death or delay the retry. Checks: `fast-retry-clears-dead-pose`, `no-phantom-death-after-fast-retry`, `death-hop-finishes-before-retry` (hidden by death tick 28, before the retry at 34).
+- **Not predicted by me:** a gap death happened below the screen, so its animation was invisible. I found this while playing; the fall death now pops up from the bottom edge (revision R1 in the test report).
+- **Not predicted by me:** moving the finish made the starter's route test fail, and hard-coded drawing put the new spikes at floor height while their collision sat on the landing tops. Both were fixed without weakening any test (R3).
