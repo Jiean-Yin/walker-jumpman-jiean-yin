@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "OK: standstill hop from L1 lands on L2's near-edge spikes",
+    "OK: full route reaches the relocated finish (1 earlier death)",
+    "OK: replay starts a fresh session",
+    "OK: M returns to the main menu"
+  ],
+  "engine": "4.7.2-stable (official)",
+  "failed": "",
+  "fps": 30,
+  "frames": 806,
+  "segment": "run-04",
+  "size": [
+    3840,
+    2160
+  ]
+}

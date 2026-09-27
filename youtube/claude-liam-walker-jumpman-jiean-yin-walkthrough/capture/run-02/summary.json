@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "OK: original section crossed with 0 deaths, standing before the new gap",
+    "OK: Esc pauses",
+    "OK: Enter resumes",
+    "OK: R restarts at spawn without counting a death"
+  ],
+  "engine": "4.7.2-stable (official)",
+  "failed": "",
+  "fps": 30,
+  "frames": 338,
+  "segment": "run-02",
+  "size": [
+    3840,
+    2160
+  ]
+}

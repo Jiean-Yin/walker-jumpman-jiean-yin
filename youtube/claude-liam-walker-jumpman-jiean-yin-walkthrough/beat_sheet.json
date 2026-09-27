@@ -1,0 +1,605 @@
+{
+  "metadata": {
+    "title": "Extending Walker Jumpman: The Spear-Carrier's Climb",
+    "slug": "claude-liam-walker-jumpman-jiean-yin-walkthrough",
+    "topic": "WALKER · GODOT WALKTHROUGH",
+    "kind": "godot-walkthrough",
+    "skill": "godot-waikthrough",
+    "modifier": "walker",
+    "brand": "claude-liam",
+    "audience": "Course reviewers and makers following Walker/Claude workflows",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "aspect_ratio": "16:9",
+    "fit": "crop",
+    "captions": false,
+    "channel_title": "@NikBearBrown",
+    "channel": "@NikBearBrown",
+    "folderLabel": "@NikBearBrown",
+    "greeting": "Hola, Liam",
+    "greeting_note": "hello lexicon: Hola (Spanish), chosen by Jiean Yin. Liam never takes Wagwan.",
+    "persona": "Liam (in for Bear)",
+    "presenter": "Liam (in for Bear)",
+    "in_for_bear": true,
+    "game": {
+      "name": "walker-jumpman-jiean-yin",
+      "repository": "https://github.com/Jiean-Yin/walker-jumpman-jiean-yin",
+      "source_revision": "film-source-v1 = eb851a678ce4a5a998d1824745678a6d2526f03e",
+      "starter": "nikbearbrown/walker-jumpman 9387542",
+      "engine": "Godot 4.7.2.stable.official.ed1daf0bf"
+    },
+    "partial_walkthrough": {
+      "agreed_by": "Jiean Yin",
+      "agreed_at": "2026-09-26",
+      "unshown_features": [
+        "focus-loss-pause"
+      ],
+      "reason": "Automatic pause on window focus loss cannot be triggered through normal input in an unattended capture; it is verified by the automated test focus-loss-pauses and stated as not filmed."
+    },
+    "labels": {
+      "gameplay": "Scripted input · real Godot render · film-source-v1",
+      "reconstruction": "Illustrative reconstruction of the Claude interface — not a transcript",
+      "held_frames": "Held frames from 1280×720 test-evidence stills, enlarged"
+    },
+    "build": {
+      "at": "2026-09-26T23:47:22",
+      "cut": "master",
+      "filled": 13,
+      "of": 13,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "role_note": "walker mode B00 — ClaudeComposerAsk. Prompt begins 'Please use Walker to convert my game design document about …'. Labelled on screen as an illustrative reconstruction (not a transcript). Liam introduces himself in the first breath.",
+      "narration_text": "Hola — this is Liam, in for Bear. Jiean Yin took Nik Bear Brown's walker-jumpman starter and extended it, following Walker's workflow, with Claude Code: a new hero and a new climb. This composer prompt is an illustrative reconstruction, not a transcript. Everything after it is the real game.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "motion": "type-on",
+        "label": "Illustrative reconstruction — not a transcript",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hola, Liam",
+            "topic": "WALKER · GODOT WALKTHROUGH",
+            "segment": "The Spear-Carrier's Climb",
+            "command": "Please use Walker to convert my game design document about extending walker-jumpman — a helmeted spear-carrier and a four-landing climb with spike traps — into a playable Godot project. Keep the single jump, the controls and the quick retry.",
+            "runningText": "reading CHANGE-BRIEF.md…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Claude",
+            "effortLabel": "High",
+            "output": [
+              "Character redrawn; collider unchanged.",
+              "Level extended; finish moved to the top.",
+              "58 automated checks pass."
+            ]
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-27T03:16:33.492390+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 16.66,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 16.666666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "BLUF",
+      "role_note": "walker mode B01 — what was built, hesitant-writer overview. Correction: 'rebuilt' -> 'extended' (it is an extension of the starter, not a new game). States the slice's limits.",
+      "narration_text": "What was built. Level one of walker-jumpman — two gaps, a spike and a flag — kept as it was: same jump, same controls, same quick retry. On top of it, a helmeted spear-carrier replaces the blue block, and a new section called Climb adds four landings stepping upward, two of them guarded by spikes, with the flag moved to the top. No cherries, no sound, no new abilities.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 22,
+      "lead_silence_s": 0.8,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "motion": "type-on-correct",
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Walker Jumpman, rebuilt.\nSame jump. Same quick retry.\nA new hero. A new climb.",
+            "triggerWords": "rebuilt",
+            "replacementWords": "extended",
+            "fontSize": 88,
+            "lineSpacing": 2.7,
+            "align": "center",
+            "seed": "4175",
+            "mistakeRate": 2,
+            "hesitateWithin": 0,
+            "hesitateBetween": 1,
+            "charMs": 8,
+            "ink": "#3D3929",
+            "accent": "#D97757",
+            "bg": "#FAF9F5"
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-27T03:04:46.344672+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 19.58,
+      "audio_file": "mp3/beat-B01.mp3",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Hesitant-writer BLUF bookend (walker mode B01): three centred serif lines typed on cream; mostly-cream frames are the mandated design."
+      },
+      "render_duration_s": 19.6,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "GAMEPLAY",
+      "role_note": "Real capture run-01 frames 0-367 (menu, mouse click start, run/turn/jump, F3 collider overlay). Scripted input, labelled.",
+      "narration_text": "A mouse click starts the real game — native 4K, scripted input, not a human playtest. The spear-carrier runs, turns and jumps. F3 outlines the collision box: still eighteen by twenty-eight.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 12.27,
+      "shot": {
+        "type": "VIDEO",
+        "source": "own",
+        "treatment": "none",
+        "capture": "run-01",
+        "frames": [
+          0,
+          368
+        ],
+        "capture_kind": "godot-engine-gameplay (scripted input)",
+        "typography_note": "Raw engine capture: the HUD text is the game's own UI, so Gate T pixel checks do not apply (type_check.py raw-footage rule). The burned label is ours and was checked separately (>=41 px, inside title-safe).",
+        "label": "Scripted input · real Godot render · film-source-v1"
+      },
+      "actual_duration_s": 12.266666666666667,
+      "audio_file": "mp3/beat-B02.mp3",
+      "clip_frames": 368,
+      "voice_duration_s": 11.541,
+      "duration_note": "voice 11.541s padded with silence to 184/15s = clip length (no retiming)",
+      "qc": {
+        "full_bleed": true,
+        "full_bleed_reason": "Real Godot gameplay capture: the game's terrain, background and HUD run edge to edge by design; the skill forbids reframing gameplay to fill a frame. Underfill/contrast checks still apply."
+      },
+      "render_duration_s": 12.266666666666667,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B02.mp4",
+        "filled_by": "media",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "GAMEPLAY",
+      "role_note": "Real capture run-02 frames 0-337 (starter course, pause/resume, manual retry).",
+      "narration_text": "This is the starter's own course, by Nik Bear Brown: two steps, a spike, two gaps. Escape pauses, Enter resumes. R restarts at the spawn point, and the retry counter stays at zero.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 11.27,
+      "shot": {
+        "type": "VIDEO",
+        "source": "own",
+        "treatment": "none",
+        "capture": "run-02",
+        "frames": [
+          0,
+          338
+        ],
+        "capture_kind": "godot-engine-gameplay (scripted input)",
+        "typography_note": "Raw engine capture: the HUD text is the game's own UI, so Gate T pixel checks do not apply (type_check.py raw-footage rule). The burned label is ours and was checked separately (>=41 px, inside title-safe).",
+        "label": "Scripted input · real Godot render · film-source-v1"
+      },
+      "actual_duration_s": 11.266666666666667,
+      "audio_file": "mp3/beat-B03.mp3",
+      "clip_frames": 338,
+      "voice_duration_s": 10.965,
+      "duration_note": "voice 10.965s padded with silence to 169/15s = clip length (no retiming)",
+      "qc": {
+        "full_bleed": true,
+        "full_bleed_reason": "Real Godot gameplay capture: the game's terrain, background and HUD run edge to edge by design; the skill forbids reframing gameplay to fill a frame. Underfill/contrast checks still apply."
+      },
+      "render_duration_s": 11.266666666666667,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B03.mp4",
+        "filled_by": "media",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "GAMEPLAY",
+      "role_note": "Real capture run-03 frames 0-341 (spike death, gap death pop-up, R mid-death). Cause->effect: fall boundary below screen -> hop drawn from bottom edge (source fact).",
+      "narration_text": "Failure is cheap. Spikes: X eyes, a hop, back to the start. A gap death happens below the screen, so its hop is drawn from the bottom edge instead. R in the middle of a death respawns at once.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 11.4,
+      "shot": {
+        "type": "VIDEO",
+        "source": "own",
+        "treatment": "none",
+        "capture": "run-03",
+        "frames": [
+          0,
+          342
+        ],
+        "capture_kind": "godot-engine-gameplay (scripted input)",
+        "typography_note": "Raw engine capture: the HUD text is the game's own UI, so Gate T pixel checks do not apply (type_check.py raw-footage rule). The burned label is ours and was checked separately (>=41 px, inside title-safe).",
+        "label": "Scripted input · real Godot render · film-source-v1"
+      },
+      "actual_duration_s": 11.4,
+      "audio_file": "mp3/beat-B04.mp3",
+      "clip_frames": 342,
+      "voice_duration_s": 10.901,
+      "duration_note": "voice 10.901s padded with silence to 57/5s = clip length (no retiming)",
+      "qc": {
+        "full_bleed": true,
+        "full_bleed_reason": "Real Godot gameplay capture: the game's terrain, background and HUD run edge to edge by design; the skill forbids reframing gameplay to fill a frame. Underfill/contrast checks still apply."
+      },
+      "render_duration_s": 11.4,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B04.mp4",
+        "filled_by": "media",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "GAMEPLAY",
+      "role_note": "Real capture run-04 frames 90-379 (end of starter section, into Climb; standstill jump from L1 dies on L2's near-edge spikes; respawn and restart). Playtest fact from TEST-REPORT §6.",
+      "narration_text": "Section three: Climb. A standstill jump from the first landing comes up short — onto the next landing's spikes. In Jiean's playtest, this trap cost five deaths.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 10.13,
+      "shot": {
+        "type": "VIDEO",
+        "source": "own",
+        "treatment": "none",
+        "capture": "run-04",
+        "frames": [
+          90,
+          380
+        ],
+        "capture_kind": "godot-engine-gameplay (scripted input)",
+        "typography_note": "Raw engine capture: the HUD text is the game's own UI, so Gate T pixel checks do not apply (type_check.py raw-footage rule). The burned label is ours and was checked separately (>=41 px, inside title-safe).",
+        "label": "Scripted input · real Godot render · film-source-v1"
+      },
+      "actual_duration_s": 9.666666666666666,
+      "audio_file": "mp3/beat-B05.mp3",
+      "clip_frames": 290,
+      "voice_duration_s": 9.429,
+      "duration_note": "voice 9.429s padded with silence to 29/3s = clip length (no retiming)",
+      "qc": {
+        "full_bleed": true,
+        "full_bleed_reason": "Real Godot gameplay capture: the game's terrain, background and HUD run edge to edge by design; the skill forbids reframing gameplay to fill a frame. Underfill/contrast checks still apply."
+      },
+      "render_duration_s": 9.666666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B05.mp4",
+        "filled_by": "media",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "GAMEPLAY",
+      "role_note": "Real capture run-04 frames 380-805 (full-speed climb over L1-L4, completion, replay, pause, main menu).",
+      "narration_text": "Second try, at full speed. Land past those spikes, climb, then take off before the far-edge spikes on the third landing — not at the edge. The flag now sits at the top. Ten point one seconds, one retry. Enter plays again; M goes back to the menu.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16.73,
+      "shot": {
+        "type": "VIDEO",
+        "source": "own",
+        "treatment": "none",
+        "capture": "run-04",
+        "frames": [
+          380,
+          806
+        ],
+        "capture_kind": "godot-engine-gameplay (scripted input)",
+        "typography_note": "Raw engine capture: the HUD text is the game's own UI, so Gate T pixel checks do not apply (type_check.py raw-footage rule). The burned label is ours and was checked separately (>=41 px, inside title-safe).",
+        "label": "Scripted input · real Godot render · film-source-v1"
+      },
+      "actual_duration_s": 14.2,
+      "audio_file": "mp3/beat-B06.mp3",
+      "clip_frames": 426,
+      "voice_duration_s": 14.059,
+      "duration_note": "voice 14.059s padded with silence to 71/5s = clip length (no retiming)",
+      "qc": {
+        "full_bleed": true,
+        "full_bleed_reason": "Real Godot gameplay capture: the game's terrain, background and HUD run edge to edge by design; the skill forbids reframing gameplay to fill a frame. Underfill/contrast checks still apply.",
+        "contrast_regions": [
+          {
+            "label": "results/pause card (HUD Rect2(163,103,318,159) in 640x360)",
+            "box": [
+              0.255,
+              0.286,
+              0.752,
+              0.728
+            ]
+          },
+          {
+            "label": "HUD top bar text",
+            "box": [
+              0.03,
+              0.03,
+              0.97,
+              0.19
+            ]
+          }
+        ],
+        "contrast_reason": "The game's own dimming scrim (Color(0.10,0.16,0.20,0.16) over the playfield) darkens the whole scene behind the results and pause cards; whole-frame luminance is not text contrast. The essential text (card and HUD bar) is dark ink on white/cream and is tested locally."
+      },
+      "render_duration_s": 14.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B06.mp4",
+        "filled_by": "media",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "MECHANISM",
+      "role_note": "Cause->effect from source. ClaudeCodeBeat with a verbatim excerpt of godot/game/session.gd at film-source-v1 (lines 98-104 plus the two call sites at lines 78 and 221). Editor chrome is reconstructed; code is actual. Display: tabs rendered as two spaces and the long teeth.append line wrapped at its commas (marked on screen); tokens are verbatim. brandLabel omitted: one handle per film, on the outro (OUTRO-LOCK); it also tripped the card-clip check.",
+      "narration_text": "Here's the cause behind spikes that appear exactly where they kill. The starter drew spikes at a hard-coded floor height. Moving only the level data put the new spikes' collision on top of the landings, but drew them inside the pillars. Now one function builds the triangles, and both the collision shapes and the drawing use it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 20,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "label": "Actual source excerpt · reconstructed editor view",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "godot/game/session.gd — film-source-v1",
+            "code": "# line 98 (tabs shown as two spaces)\nstatic func spike_triangles(rect: Rect2) -> Array[PackedVector2Array]:\n  var teeth: Array[PackedVector2Array] = []\n  var w := rect.size.x / 3.0\n  for i in range(3):\n    var x := rect.position.x + float(i) * w\n    # one line in the source, wrapped here at its commas:\n    teeth.append(PackedVector2Array([Vector2(x, rect.end.y),\n        Vector2(x + w / 2.0, rect.position.y), Vector2(x + w, rect.end.y)]))\n  return teeth\n\n# line 78 — collision\n    for points in spike_triangles(rect):\n# line 221 — drawing\n    for points in spike_triangles(\n        Rect2(entry[0], entry[1], entry[2], entry[3])):  # wrapped here",
+            "sparkLine": "One set of triangles feeds both the collision and the drawing.",
+            "language": "gdscript"
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-27T03:34:48.860728+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 16.83,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 16.833333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B07.mp4",
+        "filled_by": "remotion:ClaudeCodeBeat",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "EVIDENCE",
+      "role_note": "Held frames (labelled): evidence/level-screens-1790469914/03-camera-x1280.png (before: data-only change) and evidence/level-screens-1790469975/03-camera-x1280.png (after the fix). 1280x720 stills enlarged; not gameplay.",
+      "narration_text": "Held frames from the test evidence, recorded at 720p. On the left, only the data changed: spikes buried in the pillar sides, the flag inside the last block. On the right, after the fix: spikes on the landing tops, where their collision is.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "STILL",
+        "source": "own",
+        "treatment": "none",
+        "motion": "static",
+        "label": "Held frames from 1280×720 test-evidence stills, enlarged",
+        "typography_note": "Two game screenshots (evidence stills) with the game's own HUD text (diegetic). Gate T raw-still rule applies; our three labels (58/58/48 px Inter, inside title-safe) were checked separately in _qc/REPORT.md."
+      },
+      "actual_duration_s": 14.17,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 14.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B08.mp4",
+        "filled_by": "media",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "CREDITS",
+      "role_note": "FormACard: what was tested, human and AI contributions, and the game revision demonstrated.",
+      "narration_text": "What was checked, and by whom. Fifty-eight automated checks pass, twenty-four of them added for this extension. One human played it: Jiean. Jiean chose the character and the climb, and made or approved every design decision; Claude Code wrote the code, the tests, the captures and this script. The game shown is the revision tagged film-source-v1.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 19,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "FormACard",
+          "props": {
+            "lines": [
+              "58 automated checks pass — 24 added for this extension.",
+              "One human playtester: Jiean Yin, the author.",
+              "Jiean: character, climb, playtest; made or approved every decision.",
+              "Claude Code: code, tests, captures, this script."
+            ],
+            "meta": [
+              "Game revision shown: film-source-v1 = eb851a6 · github.com/Jiean-Yin/walker-jumpman-jiean-yin",
+              "Starter: walker-jumpman \"First Steps\" by Nik Bear Brown (9387542) · Godot 4.7.2"
+            ],
+            "dark": false
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-09-27T03:20:48.817164+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 18.13,
+      "audio_file": "mp3/beat-B09.mp3",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Form A text card (DESIGN-PRINCIPLES §1): four centred lines plus a two-line colophon on plain ground; the negative space is the card form, not a missing element."
+      },
+      "render_duration_s": 18.133333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B09.mp4",
+        "filled_by": "remotion:FormACard",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "VERDICT",
+      "role_note": "Verdict: observed working vs defects vs untested vs planned; one concrete next improvement.",
+      "narration_text": "Verdict. Observed working: the new character, all four landings, both spike traps, the relocated finish, retry and replay. Defects: the results card says one retries, and a jump looks the same as standing still. Untested: whether a newcomer reads the second landing's spikes before dying — the only human tester is the author. Pause on focus loss is checked by a test, not shown here. Next improvement: a clearer cue before landing two, and distinct poses in the air.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "motion": "artifact-reveal",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "walker-jumpman-jiean-yin at film-source-v1.",
+            "brandLabel": "@NikBearBrown",
+            "artifactLines": [
+              "Works on screen: new hero, four landings, both traps, finish, retry, replay.",
+              "Defects: '1 retries' on the results card; jumping uses the idle pose.",
+              "Untested: newcomers — one human tester, the author. Focus-loss pause: test only.",
+              "Next: a clearer cue before landing two; distinct airborne poses."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": "2026-09-27T03:11:41.273525+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 23.59,
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "render_duration_s": 23.6,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\BVDT.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "HANDOFF",
+      "role_note": "Your Turn — ClaudeComposerAsk 'Your turn.' Liam reads the prompt aloud, discusses it, invites one experiment, signs off 'Liam, in for Bear.' before the final card.",
+      "narration_text": "Your turn. Use Walker on your own copy of walker-jumpman: add one new landing after the finish plateau without touching tuning dot g d. First change only the level JSON and run the tests — show me what breaks before you fix anything. The point is the order: break it on purpose, read the failure, then fix the geometry, never the jump. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "motion": "type-on",
+        "label": "Reconstructed interface · suggested prompt",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "WALKER · YOUR TURN",
+            "segment": "One More Landing",
+            "command": "Use Walker on my walker-jumpman copy: add one new landing after the finish plateau without touching tuning.gd. First change only the level JSON and run the tests — show me what breaks before you fix anything.",
+            "runningText": "reading godot/levels/first_steps.json…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Claude",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": "2026-09-27T03:13:40.432995+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 18.58,
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "render_duration_s": 18.6,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\BHTF.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T23:47:22"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "OUTRO",
+      "kind": "outro_voice",
+      "role_note": "OUTRO-LOCK: ClaudeTitleOutro, exact title, @NikBearBrown hardcoded, slug-seeded mascot, no subline. Spoken, never scored: Liam re-reads the title then 'At Nik Bear Brown.' plus a 1.0 s silent tail hold. No jingle, no game audio.",
+      "narration_text": "Extending Walker Jumpman: The Spear-Carrier's Climb. At Nik Bear Brown.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 6,
+      "tail_hold_s": 1.0,
+      "shot": {
+        "type": "GRAPHIC",
+        "class": "SHOW",
+        "source": "remotion",
+        "motion": "mascot-title",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Extending Walker Jumpman: The Spear-Carrier's Climb.",
+            "slug": "claude-liam-walker-jumpman-jiean-yin-walkthrough",
+            "handle": "@NikBearBrown",
+            "subline": ""
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": "2026-09-27T03:00:54.510213+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 5.666666666666667,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "voice_duration_s": 4.651,
+      "duration_note": "voice 4.651s + 1.0s silent tail hold, frame-aligned to 17/30s",
+      "render_duration_s": 5.666666666666667,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\BOUT.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro",
+        "at": "2026-09-26T23:47:22"
+      }
+    }
+  ]
+}

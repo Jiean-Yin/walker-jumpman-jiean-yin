@@ -1,0 +1,48 @@
+{"deaths":0,"detail":"run-04","event":"segment_start","frame":0,"physics_tick":0,"state":0,"t_s":0.0,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (start)","event":"press","frame":20,"physics_tick":0,"state":1,"t_s":0.667,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (start)","event":"release","frame":21,"physics_tick":2,"state":1,"t_s":0.7,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"D (move right)","event":"press","frame":36,"physics_tick":32,"state":1,"t_s":1.2,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"press","frame":52,"physics_tick":64,"state":1,"t_s":1.733,"x":140.62,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"release","frame":53,"physics_tick":66,"state":1,"t_s":1.767,"x":145.96,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 292","event":"press","frame":81,"physics_tick":122,"state":1,"t_s":2.7,"x":295.29,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 292","event":"release","frame":82,"physics_tick":124,"state":1,"t_s":2.733,"x":300.62,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 424","event":"press","frame":106,"physics_tick":172,"state":1,"t_s":3.533,"x":428.62,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 424","event":"release","frame":107,"physics_tick":174,"state":1,"t_s":3.567,"x":433.96,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 548","event":"press","frame":129,"physics_tick":218,"state":1,"t_s":4.3,"x":551.29,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 548","event":"release","frame":130,"physics_tick":220,"state":1,"t_s":4.333,"x":556.62,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 712","event":"press","frame":162,"physics_tick":284,"state":1,"t_s":5.4,"x":715.55,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 712","event":"release","frame":163,"physics_tick":286,"state":1,"t_s":5.433,"x":720.88,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 930","event":"press","frame":203,"physics_tick":366,"state":1,"t_s":6.767,"x":934.22,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 930","event":"release","frame":204,"physics_tick":368,"state":1,"t_s":6.8,"x":939.55,"y":309.52}
+{"deaths":0,"detail":"D (move right)","event":"release","frame":226,"physics_tick":412,"state":1,"t_s":7.533,"x":1056.88,"y":287.93}
+{"deaths":0,"detail":"D (move right)","event":"press","frame":249,"physics_tick":458,"state":1,"t_s":8.3,"x":1062.22,"y":287.93}
+{"deaths":0,"detail":"Space (standstill jump from L1)","event":"press","frame":249,"physics_tick":458,"state":1,"t_s":8.3,"x":1062.22,"y":287.93}
+{"deaths":0,"detail":"Space (standstill jump from L1)","event":"release","frame":250,"physics_tick":460,"state":1,"t_s":8.333,"x":1063.28,"y":277.52}
+{"deaths":1,"detail":"D","event":"release","frame":267,"physics_tick":494,"state":3,"t_s":8.9,"x":1149.51,"y":263.92}
+{"deaths":1,"detail":"D (move right)","event":"press","frame":304,"physics_tick":534,"state":1,"t_s":10.133,"x":64.0,"y":320.0}
+{"deaths":1,"detail":"Space (jump) at mark 138","event":"press","frame":320,"physics_tick":566,"state":1,"t_s":10.667,"x":140.62,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 138","event":"release","frame":321,"physics_tick":568,"state":1,"t_s":10.7,"x":145.96,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 292","event":"press","frame":349,"physics_tick":624,"state":1,"t_s":11.633,"x":295.29,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 292","event":"release","frame":350,"physics_tick":626,"state":1,"t_s":11.667,"x":300.62,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 424","event":"press","frame":374,"physics_tick":674,"state":1,"t_s":12.467,"x":428.62,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 424","event":"release","frame":375,"physics_tick":676,"state":1,"t_s":12.5,"x":433.96,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 548","event":"press","frame":397,"physics_tick":720,"state":1,"t_s":13.233,"x":551.29,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 548","event":"release","frame":398,"physics_tick":722,"state":1,"t_s":13.267,"x":556.62,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 712","event":"press","frame":430,"physics_tick":786,"state":1,"t_s":14.333,"x":715.55,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 712","event":"release","frame":431,"physics_tick":788,"state":1,"t_s":14.367,"x":720.88,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 930","event":"press","frame":471,"physics_tick":868,"state":1,"t_s":15.7,"x":934.22,"y":319.93}
+{"deaths":1,"detail":"Space (jump) at mark 930","event":"release","frame":472,"physics_tick":870,"state":1,"t_s":15.733,"x":939.55,"y":309.52}
+{"deaths":1,"detail":"Space (jump) at mark 1090","event":"press","frame":501,"physics_tick":928,"state":1,"t_s":16.7,"x":1094.22,"y":287.93}
+{"deaths":1,"detail":"Space (jump) at mark 1090","event":"release","frame":502,"physics_tick":930,"state":1,"t_s":16.733,"x":1099.55,"y":277.52}
+{"deaths":1,"detail":"Space (jump) at mark 1230","event":"press","frame":527,"physics_tick":980,"state":1,"t_s":17.567,"x":1232.88,"y":271.93}
+{"deaths":1,"detail":"Space (jump) at mark 1230","event":"release","frame":528,"physics_tick":982,"state":1,"t_s":17.6,"x":1238.22,"y":261.52}
+{"deaths":1,"detail":"Space (jump) at mark 1375","event":"press","frame":554,"physics_tick":1034,"state":1,"t_s":18.467,"x":1376.88,"y":239.93}
+{"deaths":1,"detail":"Space (jump) at mark 1375","event":"release","frame":555,"physics_tick":1036,"state":1,"t_s":18.5,"x":1382.21,"y":229.52}
+{"deaths":1,"detail":"D (move right)","event":"release","frame":588,"physics_tick":1102,"state":4,"t_s":19.6,"x":1558.21,"y":223.93}
+{"deaths":0,"detail":"Enter (play again)","event":"press","frame":688,"physics_tick":1102,"state":1,"t_s":22.933,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (play again)","event":"release","frame":689,"physics_tick":1104,"state":1,"t_s":22.967,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Esc (pause)","event":"press","frame":724,"physics_tick":1174,"state":2,"t_s":24.133,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Esc (pause)","event":"release","frame":725,"physics_tick":1174,"state":2,"t_s":24.167,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"M (main menu)","event":"press","frame":755,"physics_tick":1174,"state":0,"t_s":25.167,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"M (main menu)","event":"release","frame":756,"physics_tick":1174,"state":0,"t_s":25.2,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"frames=806 failed=","event":"segment_end","frame":806,"physics_tick":1174,"state":0,"t_s":26.867,"x":64.0,"y":320.0}

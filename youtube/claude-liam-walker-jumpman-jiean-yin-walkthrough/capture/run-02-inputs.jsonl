@@ -1,0 +1,22 @@
+{"deaths":0,"detail":"run-02","event":"segment_start","frame":0,"physics_tick":0,"state":0,"t_s":0.0,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (start)","event":"press","frame":25,"physics_tick":0,"state":1,"t_s":0.833,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Enter (start)","event":"release","frame":26,"physics_tick":2,"state":1,"t_s":0.867,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"D (move right)","event":"press","frame":41,"physics_tick":32,"state":1,"t_s":1.367,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"press","frame":57,"physics_tick":64,"state":1,"t_s":1.9,"x":140.62,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 138","event":"release","frame":58,"physics_tick":66,"state":1,"t_s":1.933,"x":145.96,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 292","event":"press","frame":86,"physics_tick":122,"state":1,"t_s":2.867,"x":295.29,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 292","event":"release","frame":87,"physics_tick":124,"state":1,"t_s":2.9,"x":300.62,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 424","event":"press","frame":111,"physics_tick":172,"state":1,"t_s":3.7,"x":428.62,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 424","event":"release","frame":112,"physics_tick":174,"state":1,"t_s":3.733,"x":433.96,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 548","event":"press","frame":134,"physics_tick":218,"state":1,"t_s":4.467,"x":551.29,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 548","event":"release","frame":135,"physics_tick":220,"state":1,"t_s":4.5,"x":556.62,"y":309.52}
+{"deaths":0,"detail":"Space (jump) at mark 712","event":"press","frame":167,"physics_tick":284,"state":1,"t_s":5.567,"x":715.55,"y":319.93}
+{"deaths":0,"detail":"Space (jump) at mark 712","event":"release","frame":168,"physics_tick":286,"state":1,"t_s":5.6,"x":720.88,"y":309.52}
+{"deaths":0,"detail":"D (move right)","event":"release","frame":202,"physics_tick":354,"state":1,"t_s":6.733,"x":902.22,"y":319.93}
+{"deaths":0,"detail":"Esc (pause)","event":"press","frame":230,"physics_tick":410,"state":2,"t_s":7.667,"x":907.55,"y":319.93}
+{"deaths":0,"detail":"Esc (pause)","event":"release","frame":231,"physics_tick":410,"state":2,"t_s":7.7,"x":907.55,"y":319.93}
+{"deaths":0,"detail":"Enter (resume)","event":"press","frame":281,"physics_tick":410,"state":1,"t_s":9.367,"x":907.55,"y":319.93}
+{"deaths":0,"detail":"Enter (resume)","event":"release","frame":282,"physics_tick":412,"state":1,"t_s":9.4,"x":907.55,"y":319.93}
+{"deaths":0,"detail":"R (manual retry)","event":"press","frame":302,"physics_tick":452,"state":1,"t_s":10.067,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"R (manual retry)","event":"release","frame":303,"physics_tick":454,"state":1,"t_s":10.1,"x":64.0,"y":320.0}
+{"deaths":0,"detail":"frames=338 failed=","event":"segment_end","frame":338,"physics_tick":524,"state":1,"t_s":11.267,"x":64.0,"y":320.0}

@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "OK: mouse click on the START button starts the game",
+    "OK: facing left after moving left",
+    "OK: F3 shows the collider outline",
+    "OK: collider hidden again, no deaths"
+  ],
+  "engine": "4.7.2-stable (official)",
+  "failed": "",
+  "fps": 30,
+  "frames": 368,
+  "segment": "run-01",
+  "size": [
+    3840,
+    2160
+  ]
+}

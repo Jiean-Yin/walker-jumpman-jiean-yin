@@ -82,7 +82,28 @@ Each run writes a timestamped report to `evidence/`. The starter's route fixture
 
 ## Explainer film
 
-*Not yet produced.* It will be made with Brutalist's `godot-waikthrough` skill (`walker` modifier), rendered in 4K. MP4 files stay out of GitHub, so this section will link the course media copy and give the film's filename, SHA-256 checksum, and the game-source revision it shows.
+**"Extending Walker Jumpman: The Spear-Carrier's Climb"**, made with Brutalist's `godot-waikthrough` skill in `walker` mode, narrated by Liam (local Kokoro voice).
+
+| Field | Value |
+|---|---|
+| Filename | `claude-liam-walker-jumpman-jiean-yin-walkthrough.mp4` |
+| SHA-256 | `06606492d6c6edee40d70dd671191cd836228a2fbc9eaf4cb6985c9309f0159a` |
+| Format | 3840×2160 (native 4K landscape), 30 fps, H.264 + AAC, 192.1 s, 16.2 MB |
+| Game revision shown | tag [`film-source-v1`](https://github.com/Jiean-Yin/walker-jumpman-jiean-yin/tree/film-source-v1) = `eb851a6` |
+| Where to get it | Submitted as an attachment with the Canvas submission; no course media storage was available. MP4 files are kept out of GitHub. |
+
+Check the copy you have with `sha256sum claude-liam-walker-jumpman-jiean-yin-walkthrough.mp4` (PowerShell: `Get-FileHash … -Algorithm SHA256`); it must match the value above.
+
+**What it shows:**
+1. The Walker opening, labelled as an illustrative reconstruction.
+2. What was built.
+3. Real 4K gameplay captured from the engine with **scripted input** (labelled on screen; not a human playtest): character and collider; the starter course; spike and gap deaths with retry; the L2 trap; the full climb to the relocated finish; replay.
+4. The actual `spike_triangles()` code as the cause-and-effect explanation, then labelled before/after held frames.
+5. Tests and human/AI contributions, a verdict with limitations, Your Turn, and the outro.
+
+**One implemented feature is not filmed:** the automatic pause on window focus loss, which is verified by the test `focus-loss-pauses`. This is an explicit partial walkthrough, agreed by the author.
+
+**Film sources and evidence:** [youtube/claude-liam-walker-jumpman-jiean-yin-walkthrough/](youtube/claude-liam-walker-jumpman-jiean-yin-walkthrough/). It contains the beat sheet (script and timing), `coverage.json`, per-run input logs, the capture driver, `CAPTURE.md`, `RIFF.md`, `SHOTLIST.md`, `FACTCHECK.md`, `PROMPTS.md`, `BUILD-PROMPT.md`, the QC reports and the export's verification receipt.
 
 ## Credits
 
