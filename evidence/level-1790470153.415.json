@@ -1,0 +1,169 @@
+{
+  "created_at": "2026-09-27T00:49:13",
+  "engine": "4.7.2-stable (official)",
+  "failures": 0,
+  "results": [
+    {
+      "id": "finish-relocated-onto-L4",
+      "observed": {
+        "L4": "[P: (1440.0, 224.0), S: (160.0, 160.0)]",
+        "finish": "[1560.0, 168.0, 24.0, 56.0]"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "spikes-drawn-where-they-collide",
+      "observed": {
+        "hazards": 3,
+        "mismatches": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "new-landings-below-top-hud",
+      "observed": {
+        "flag_pole_top": 154.0,
+        "hud_bottom_edge": 74,
+        "landing_tops": {
+          "L1": 288.0,
+          "L2": 272.0,
+          "L3": 240.0,
+          "L4": 224.0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "route-stands-on-all-new-landings",
+      "observed": {
+        "deaths": 0,
+        "finish_position": "(1558.212, 223.9253)",
+        "state": 4,
+        "ticks": 567,
+        "visited": [
+          "L1",
+          "L2",
+          "L3",
+          "L4"
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "next-landing-visible-at-takeoff",
+      "observed": {
+        "takeoffs": [
+          {
+            "next_landing_x": 1008.0,
+            "takeoff_x": 931.6,
+            "view_right_edge": 1351.55053710938,
+            "visible": true
+          },
+          {
+            "next_landing_x": 1136.0,
+            "takeoff_x": 1091.6,
+            "view_right_edge": 1511.55065917969,
+            "visible": true
+          },
+          {
+            "next_landing_x": 1296.0,
+            "takeoff_x": 1230.2,
+            "view_right_edge": 1600.0,
+            "visible": true
+          },
+          {
+            "next_landing_x": 1440.0,
+            "takeoff_x": 1376.9,
+            "view_right_edge": 1600.0,
+            "visible": true
+          }
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "finish-in-view-at-completion",
+      "observed": {
+        "camera_x": 1280.0,
+        "finish_right": 1584.0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "progress-bar-uses-relocated-finish",
+      "observed": {
+        "progress_at_completion": 0.998804755389372
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "progress-not-full-at-old-finish",
+      "observed": {
+        "progress_at_x916": 0.56951871657754
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "walking-without-jumping-cannot-progress",
+      "observed": {
+        "L1": {
+          "completed": false,
+          "end": "(1129.059, 435.9252)",
+          "reason": "Missed the landing",
+          "start": "(1020.0, 288.0)",
+          "state": 3
+        },
+        "L2": {
+          "completed": false,
+          "end": "(1289.059, 435.9252)",
+          "reason": "Missed the landing",
+          "start": "(1170.0, 272.0)",
+          "state": 3
+        },
+        "L3": {
+          "completed": false,
+          "end": "(1397.288, 239.9253)",
+          "reason": "Watch the spikes",
+          "start": "(1310.0, 240.0)",
+          "state": 3
+        },
+        "original-end": {
+          "completed": false,
+          "end": "(1001.059, 435.9252)",
+          "reason": "Missed the landing",
+          "start": "(800.0, 320.0)",
+          "state": 3
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "L2-short-hop-lands-on-spikes",
+      "observed": {
+        "died_at": "(1147.293, 263.9256)",
+        "reason": "Watch the spikes",
+        "state": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "L2-safe-area-is-safe",
+      "observed": {
+        "standing_on": 6,
+        "state": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "L3-late-jump-clips-far-spikes",
+      "observed": {
+        "died_at": "(1396.622, 229.5243)",
+        "jumped_at_x": 1391.2880859375,
+        "reason": "Watch the spikes",
+        "state": 3
+      },
+      "status": "PASS"
+    }
+  ],
+  "scope": "03 / CLIMB level extension checks; not human playtesting"
+}
