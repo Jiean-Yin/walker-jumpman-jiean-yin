@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-09-27T00:42:13",
+  "engine": "4.7.2-stable (official)",
+  "failures": 0,
+  "results": [
+    {
+      "id": "collider-unchanged",
+      "observed": {
+        "offset": "(0.0, -14.0)",
+        "size": "(18.0, 28.0)"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "tuning-unchanged",
+      "observed": {
+        "acceleration": 1280.0,
+        "buffer_ticks": 6,
+        "coyote_ticks": 6,
+        "deceleration": 1920.0,
+        "gravity": 960.0,
+        "jump_velocity": -320.0,
+        "speed": 160.0,
+        "terminal_velocity": 480.0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "facing-follows-input",
+      "observed": {
+        "after_left": -1.0,
+        "after_right": 1.0
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "spear-pose",
+      "observed": {
+        "airborne_deg": 0.0000662662447575567,
+        "idle_deg": 0.0830484554861426,
+        "running_deg": 24.9575511018404
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "death-sets-dead-pose",
+      "observed": {
+        "dead": true,
+        "state": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "death-hop-visual-only",
+      "observed": {
+        "body": "(330.0, 311.6)",
+        "died_at": "(330.0, 311.6)",
+        "drawn_offset": -22.75
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "death-hop-finishes-before-retry",
+      "observed": {
+        "dead_after_retry": false,
+        "hidden_at_death_tick": 28,
+        "state": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "fall-death-body-frozen",
+      "observed": {
+        "body": "(480.0, 432.0)",
+        "fell_at": "(480.0, 432.0)",
+        "from_fall": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "fall-death-hop-visible",
+      "observed": {
+        "deaths": 1,
+        "fell_at_y": 432.0,
+        "hidden_again_at_death_tick": 25,
+        "highest_drawn_head_y": 289.0,
+        "state": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "fast-retry-clears-dead-pose",
+      "observed": {
+        "dead": false,
+        "deaths": 1,
+        "position": "(64.0, 320.0)",
+        "state": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "no-phantom-death-after-fast-retry",
+      "observed": {
+        "deaths": 1,
+        "state": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "collider-overlay-toggle",
+      "observed": {
+        "shown_after_first_press": true,
+        "state": 1
+      },
+      "status": "PASS"
+    }
+  ],
+  "scope": "Character identity checks; not human playtesting"
+}

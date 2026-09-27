@@ -74,10 +74,13 @@ func _add_area(rect: Rect2, layer: int, spikes: bool) -> Area2D:
 	area.collision_mask = 2
 	if spikes:
 		# Three exact triangular trigger silhouettes; no oversized invisible box.
-		for i in range(3):
+		# Same triangles _draw() uses, so what is seen is what collides.
+		for points in spike_triangles(rect):
 			var triangle := CollisionPolygon2D.new()
-			var x := float(i) * rect.size.x / 3.0
-			triangle.polygon = PackedVector2Array([Vector2(x, rect.size.y), Vector2(x + 4, 0), Vector2(x + 8, rect.size.y)])
+			var local := PackedVector2Array()
+			for p in points:
+				local.append(p - rect.position)
+			triangle.polygon = local
 			area.add_child(triangle)
 	else:
 		var collision := CollisionShape2D.new()
@@ -88,6 +91,17 @@ func _add_area(rect: Rect2, layer: int, spikes: bool) -> Area2D:
 		area.add_child(collision)
 	add_child(area)
 	return area
+
+## World-space spike triangles for a hazard rect: three equal teeth standing on
+## the rect's bottom edge. For the starter's 24×16 hazard this is exactly its
+## original 8-px-wide teeth. Shared by collision and drawing.
+static func spike_triangles(rect: Rect2) -> Array[PackedVector2Array]:
+	var teeth: Array[PackedVector2Array] = []
+	var w := rect.size.x / 3.0
+	for i in range(3):
+		var x := rect.position.x + float(i) * w
+		teeth.append(PackedVector2Array([Vector2(x, rect.end.y), Vector2(x + w / 2.0, rect.position.y), Vector2(x + w, rect.end.y)]))
+	return teeth
 
 func start_session() -> void:
 	if state == State.PLAYING:
@@ -188,12 +202,14 @@ func _draw() -> void:
 	var font := ThemeDB.fallback_font
 	var ink := Color("25354a")
 	# All visual assets are original Godot vector drawing, not recovered art.
-	draw_rect(Rect2(-400, -200, 1800, 900), Color("f6f3ec"))
-	for x in range(0, 961, 32):
+	# Background spans the level's actual width (starter hard-coded 960).
+	var width := int(level.width)
+	draw_rect(Rect2(-400, -200, width + 800, 900), Color("f6f3ec"))
+	for x in range(0, width + 1, 32):
 		draw_line(Vector2(x, 80), Vector2(x, 320), Color("e7e5df"), 1)
 	for y in range(96, 321, 32):
-		draw_line(Vector2(0, y), Vector2(960, y), Color("e7e5df"), 1)
-	for x in [100, 470, 770]:
+		draw_line(Vector2(0, y), Vector2(width, y), Color("e7e5df"), 1)
+	for x in [100, 470, 770, 1090, 1400]:
 		draw_colored_polygon(PackedVector2Array([Vector2(x-90,320),Vector2(x+50,180),Vector2(x+190,320)]), Color("e4e8e3"))
 	for entry in level.solids:
 		var r := Rect2(entry[0], entry[1], entry[2], entry[3])
@@ -202,13 +218,16 @@ func _draw() -> void:
 		for x in range(int(r.position.x)+12, int(r.end.x), 24):
 			draw_line(Vector2(x, r.position.y+12), Vector2(x+7, r.position.y+19), Color("405166"), 1)
 	for entry in level.hazards:
-		for i in range(3):
-			var x: float = entry[0] + i*8
-			draw_colored_polygon(PackedVector2Array([Vector2(x,320),Vector2(x+4,304),Vector2(x+8,320)]), Color("d24e42"))
+		for points in spike_triangles(Rect2(entry[0], entry[1], entry[2], entry[3])):
+			draw_colored_polygon(points, Color("d24e42"))
+	# Flag and label follow the finish data (starter hard-coded floor y=320).
 	var finish_x: float = level.finish[0]
-	draw_line(Vector2(finish_x+3, 320), Vector2(finish_x+3, 250), ink, 3)
-	draw_colored_polygon(PackedVector2Array([Vector2(finish_x+5,250),Vector2(finish_x+32,260),Vector2(finish_x+5,274)]), Color("287c68"))
+	var finish_base: float = level.finish[1] + level.finish[3]
+	draw_line(Vector2(finish_x+3, finish_base), Vector2(finish_x+3, finish_base-70), ink, 3)
+	draw_colored_polygon(PackedVector2Array([Vector2(finish_x+5,finish_base-70),Vector2(finish_x+32,finish_base-60),Vector2(finish_x+5,finish_base-46)]), Color("287c68"))
 	draw_string(font, Vector2(33, 251), "01 / GET MOVING", HORIZONTAL_ALIGNMENT_LEFT, -1, 15, ink)
 	draw_string(font, Vector2(33, 273), "Read the landing. Then jump.", HORIZONTAL_ALIGNMENT_LEFT, -1, 13, ink)
 	draw_string(font, Vector2(474, 227), "02 / MIND THE GAP", HORIZONTAL_ALIGNMENT_LEFT, -1, 15, ink)
-	draw_string(font, Vector2(878, 225), "FINISH", HORIZONTAL_ALIGNMENT_LEFT, -1, 15, ink)
+	draw_string(font, Vector2(990, 150), "03 / CLIMB", HORIZONTAL_ALIGNMENT_LEFT, -1, 15, ink)
+	draw_string(font, Vector2(990, 172), "Land past the spikes. Jump before them.", HORIZONTAL_ALIGNMENT_LEFT, -1, 13, ink)
+	draw_string(font, Vector2(finish_x-38, finish_base-95), "FINISH", HORIZONTAL_ALIGNMENT_LEFT, -1, 15, ink)

@@ -1,11 +1,12 @@
 {
   "id": "first-steps",
   "title": "First Steps",
-  "scope": "Control/retry slice, not the proposed full three-zone course",
-  "width": 960,
+  "scope": "Starter control/retry slice (x 0-960) plus the 03 / CLIMB extension (x 960-1600) by walker-jumpman-jiean-yin",
+  "width": 1600,
   "fall_y": 430,
   "spawn": [64, 320],
-  "solids": [[0, 320, 448, 64], [512, 320, 224, 64], [784, 320, 176, 64], [160, 304, 48, 16], [576, 288, 48, 32]],
-  "hazards": [[320, 304, 24, 16]],
-  "finish": [916, 264, 24, 56]
+  "solids": [[0, 320, 448, 64], [512, 320, 224, 64], [784, 320, 176, 64], [160, 304, 48, 16], [576, 288, 48, 32],
+             [1008, 288, 96, 96], [1136, 272, 112, 112], [1296, 240, 128, 144], [1440, 224, 160, 160]],
+  "hazards": [[320, 304, 24, 16], [1136, 256, 24, 16], [1400, 224, 24, 16]],
+  "finish": [1560, 168, 24, 56]
 }
